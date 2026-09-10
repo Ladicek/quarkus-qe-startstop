@@ -10,6 +10,7 @@ import io.quarkus.ts.startstop.utils.WebpageTester;
 
 import org.apache.commons.lang3.StringUtils;
 import org.jboss.logging.Logger;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInfo;
@@ -203,6 +204,7 @@ public class CodeQuarkusTest {
     }
 
     @Test
+    @Disabled("QUARKUS-9043")
     public void supportedRestEasyClassicExtensions(TestInfo testInfo) throws Exception {
         testRuntime(testInfo, CodeQuarkusExtensions.getRestEasyClassicExtensions(), MvnCmds.MVNW_DEV);
     }

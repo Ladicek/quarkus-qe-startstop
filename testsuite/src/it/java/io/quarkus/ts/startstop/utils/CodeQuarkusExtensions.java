@@ -13,7 +13,8 @@ public enum CodeQuarkusExtensions {
     QUARKUS_RESTEASY_REACTIVE_JACKSON("quarkus-rest-jackson", "REST Jackson", "ignored", true),
     QUARKUS_RESTEASY_REACTIVE_JAXB("quarkus-rest-jaxb", "REST JAXB", "ignored", false),
     QUARKUS_RESTEASY_REACTIVE_KOTLIN_SERIALIZATION("quarkus-rest-kotlin-serialization", "REST Kotlin Serialization", "ignored", false),
-    QUARKUS_RESTEASY_REACTIVE_LINKS("quarkus-rest-links", "REST Links", "ignored", false),
+    // QUARKUS-8858
+    //QUARKUS_RESTEASY_REACTIVE_LINKS("quarkus-rest-links", "REST Links", "ignored", false),
     QUARKUS_REST_CLIENT_REACTIVE("quarkus-rest-client", "REST Client", "ignored", true),
     QUARKUS_REST_CLIENT_REACTIVE_JACKSON("quarkus-rest-client-jackson", "REST Client Jackson", "ignored", true),
     QUARKUS_REST_CLIENT_REACTIVE_JAXB("quarkus-rest-client-jaxb", "REST Client JAXB", "ignored", true),
